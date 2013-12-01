@@ -1894,6 +1894,20 @@ public final class Settings {
         public static final String BUTTON_BACKLIGHT_TIMEOUT = "button_backlight_timeout";
 
         /**
+         * Control whether the screen off animation should be shown
+         * @hide
+         */
+        public static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+
+        /**
+         * Control which animation to use when turning the screen off
+         * 0 = electron beam
+         * 1 = fade
+         * @hide
+         */
+        public static final String SCREEN_ANIMATION_STYLE = "screen_animation_style";
+
+        /**
          * Control whether the process CPU usage meter should be shown.
          *
          * @deprecated Use {@link Global#SHOW_PROCESSES} instead
