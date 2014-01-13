@@ -2390,9 +2390,9 @@ final class ActivityStack {
         ArrayList<ActivityRecord> activities = r.task.mActivities;
         for (int index = activities.indexOf(r); index >= 0; --index) {
             ActivityRecord cur = activities.get(index);
-            if (!Objects.equals(cur.taskAffinity, r.taskAffinity)) {
+            /*if (!Objects.equals(cur.taskAffinity, r.taskAffinity)) {
                 break;
-            }
+            }*/
             finishActivityLocked(cur, Activity.RESULT_CANCELED, null, "request-affinity", true);
         }
         return true;
